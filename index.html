@@ -24,17 +24,20 @@
      <h2>my time</h2>
     <p id="clock"></p>
 
-    <script>
-    function updateClock() {
-        const now = new Date();
-        const time = now.toLocaleTimeString();
-        document.getElementById("clock").innerText = time;
-    }
+<script>
+function updateClock() {
+    const now = new Date();
 
-    setInterval(updateClock, 1000);
-    updateClock();
-    </script>
+    const time = now.toLocaleTimeString("en-GB", {
+        timeZone: "Europe/London"
+    });
 
+    document.getElementById("clock").innerText = time;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+</script>
    
     
 
