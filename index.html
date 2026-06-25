@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html>
-
-<img src="green-train-header.jpg" alt="Black and white mountains" width="500" style="display: block; margin: 20px auto;">
-
-<style>
-    body {
-        text-align: center;
-    }
-</style>
-    
 <head>
     <title>evan thomas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px; /* space between links */
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
+
 <body>
+    <img src="green-train-header.jpg" alt="Black and white mountains" width="500" style="display: block; margin: 20px auto;">
+
     <h1>evan thomas</h1>
 
- <a href="about.html">about me</a>
-    <a href="projects.html">projects</a>
-<a href="gear.html">gear</a>
-   <a href="blog/index.html">blog</a>
-    <a href="socials.html">socials</a>
+    <div class="nav-links">
+        <a href="about.html">about me</a>
+        <a href="projects.html">projects</a>
+        <a href="gear.html">gear</a>
+        <a href="blog/index.html">blog</a>
+        <a href="socials.html">socials</a>
+    </div>
 
-     <h2>my time</h2>
+    <h2>my time</h2>
     <p id="clock"></p>
 
-<script>
-function updateClock() {
-    const now = new Date();
+    <script>
+    function updateClock() {
+        const now = new Date();
 
-    const time = now.toLocaleTimeString("en-GB", {
-        timeZone: "Europe/London"
-    });
+        const time = now.toLocaleTimeString("en-GB", {
+            timeZone: "Europe/London"
+        });
 
-    document.getElementById("clock").innerText = time;
-}
+        document.getElementById("clock").innerText = time;
+    }
 
-setInterval(updateClock, 1000);
-updateClock();
-</script>
-   
-    
-
-   <link rel="stylesheet" href="style.css">
-</body>
+    setInterval(updateClock, 1000);
+    updateClock();
+    </script>
 </body>
 </html>
-
-
