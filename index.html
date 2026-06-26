@@ -43,6 +43,43 @@
         updateClock();
     </script>
 
+    <script>
+const items = document.querySelectorAll(".menu-item");
+
+let selected = 0;
+
+function updateMenu() {
+    items.forEach((item, index) => {
+        if (index === selected) {
+            item.classList.add("selected");
+            item.innerHTML = "> " + item.textContent.trim();
+        } else {
+            item.classList.remove("selected");
+            item.innerHTML = "  " + item.textContent.trim().replace(/^>\s*/, "");
+        }
+    });
+}
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "ArrowDown") {
+        selected = (selected + 1) % items.length;
+        updateMenu();
+    }
+
+    if (event.key === "ArrowUp") {
+        selected = (selected - 1 + items.length) % items.length;
+        updateMenu();
+    }
+
+    if (event.key === "Enter") {
+        window.location.href = items[selected].href;
+    }
+
+});
+
+updateMenu();
+</script>
 </body>
 
 </html>
