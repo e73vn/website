@@ -1,59 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>evan thomas</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            text-align: center;
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            gap: 25px; /* space between links */
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
-    </style>
 </head>
 
 <body>
-   <img src="headers/samurai.jpg" alt="samurai" width="500" style="display: block; margin: 20px auto;">
 
-    <h1>evan thomas</h1>
+    <img src="headers/samurai.jpg" alt="samurai" width="500">
 
-    <div class="nav-links">
-        <a href="about.html">about me</a>
-        <a href="projects.html">projects</a>
-        <a href="gear.html">gear</a>
-        <a href="blog/index.html">blog</a>
-        <a href="socials.html">socials</a>
-        <a href="ideas/index.html">ideas</a>
+    <h1>GNU GRUB</h1>
+    <p>evan thomas</p>
+
+    <div class="grub-box">
+        <a class="selected" href="about.html">&gt; about me</a>
+        <a href="projects.html">  projects</a>
+        <a href="gear.html">  gear</a>
+        <a href="blog/index.html">  blog</a>
+        <a href="socials.html">  socials</a>
+        <a href="ideas/index.html">  ideas</a>
+        <a href="photography/index.html">  photography</a>
     </div>
 
     <h2>my time</h2>
     <p id="clock"></p>
 
+    <p>Use ↑ ↓ to select. Press Enter to continue.</p>
+
     <script>
-    function updateClock() {
-        const now = new Date();
+        function updateClock() {
+            const now = new Date();
 
-        const time = now.toLocaleTimeString("en-GB", {
-            timeZone: "Europe/London"
-        });
+            const time = now.toLocaleTimeString("en-GB", {
+                timeZone: "Europe/London"
+            });
 
-        document.getElementById("clock").innerText = time;
-    }
+            document.getElementById("clock").innerText = time;
+        }
 
-    setInterval(updateClock, 1000);
-    updateClock();
+        setInterval(updateClock, 1000);
+        updateClock();
     </script>
 
-  <div class="nav-links">
-        <a href="photography/index.html">photography</a>
-  </div>
-
-    
 </body>
+
 </html>
