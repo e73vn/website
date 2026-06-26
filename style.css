@@ -1,6 +1,6 @@
-body {
-    background-color: black;
-    color: white;
+ body {
+    background-color: #282828;
+    color: #ebdbb2;
     font-family: "Courier New", monospace;
     text-align: center;
 }
@@ -11,16 +11,17 @@ img {
 }
 
 a {
-    color: white;
+    color: #ebdbb2;
     text-decoration: none;
 }
 
 .grub-box {
     width: 350px;
     margin: 20px auto;
-    border: 2px solid white;
+    border: 2px solid #a89984;
     padding: 10px;
     text-align: left;
+    background-color: #1d2021;
 }
 
 .grub-box a {
@@ -30,6 +31,18 @@ a {
 
 .selected,
 .grub-box a:hover {
-    background-color: blue;
-    color: white;
+    background-color: #458588;
+    color: #fbf1c7;
+}
+
+h1 {
+    color: #fabd2f;
+}
+
+h2 {
+    color: #b8bb26;
+}
+
+#clock {
+    color: #83a598;
 }
