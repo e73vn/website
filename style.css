@@ -4,12 +4,12 @@ body {
     margin: 0 auto;
     line-height: 1.6;
     background-color: #1e1e1e;
-    color: #ffffff;
+    color: ##d4d4d4;
     padding: 20px;
 }
 
 h1, h2 {
-    color: #ffffff;
+    color: ##d4d4d4;
 }
 
 p {
