@@ -61,6 +61,55 @@ h2 {
 }
 
 
+/* Raspberry Pi page */
+
+.pi-page {
+    background: linear-gradient(135deg, #071b16, #123524);
+    color: white;
+}
+
+.pi-page .content {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #32cd32;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(50, 205, 50, 0.25);
+}
+
+.pi-page h2 {
+    color: #7CFC00;
+    margin-bottom: 10px;
+}
+
+.pi-page h3 {
+    color: #98FB98;
+    margin-top: 25px;
+}
+
+.pi-page ul {
+    line-height: 1.8;
+}
+
+.pi-page .status {
+    display: inline-block;
+    background: #32cd32;
+    color: #0b1b10;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.pi-page a {
+    color: #9cff9c;
+    text-decoration: none;
+}
+
+.pi-page a:hover {
+    text-decoration: underline;
+}
+
 
 
 
