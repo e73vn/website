@@ -112,7 +112,101 @@ h2 {
 }
 
 
+/* document-style project page */
 
+.pi-page {
+    text-align: left;
+}
+
+.pi-page .doc-page {
+    max-width: 680px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+}
+
+.pi-page .doc-back {
+    display: inline-block;
+    margin-bottom: 3rem;
+    color: #83a598;
+    text-decoration: none;
+}
+
+.pi-page .doc-back:hover {
+    color: #fabd2f;
+    text-decoration: underline;
+}
+
+.pi-page .doc-header {
+    margin-bottom: 2rem;
+}
+
+.pi-page h1 {
+    color: #fabd2f;
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0 0 0.5rem;
+}
+
+.pi-page h1::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #a89984;
+    margin-top: 0.6rem;
+    width: 100%;
+}
+
+.pi-page .status {
+    color: #83a598;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.pi-page .intro {
+    max-width: 60ch;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.pi-page section {
+    margin-top: 2.5rem;
+}
+
+.pi-page h2 {
+    color: #b8bb26;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.pi-page h2::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #504945;
+    margin-top: 0.4rem;
+    width: 100%;
+}
+
+.pi-page p {
+    max-width: 60ch;
+    line-height: 1.7;
+}
+
+.pi-page ul {
+    padding-left: 1.4rem;
+    line-height: 1.8;
+}
+
+.pi-page li {
+    margin-bottom: 0.3rem;
+}
+
+.pi-page a {
+    color: #8ec07c;
+}
+
+.pi-page a:hover {
+    color: #b8bb26;
+}
 
 
 
