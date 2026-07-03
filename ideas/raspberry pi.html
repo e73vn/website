@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +8,39 @@
 </head>
 
 <body class="pi-page">
+    <main class="doc-page">
+        <a class="doc-back" href="index.html">← ideas</a>
 
-    <div class="content">
-        <p class="status">status: planned</p>
+        <header class="doc-header">
+            <h1>raspberry pi ideas</h1>
+            <p class="status">status: planned</p>
+        </header>
 
-        <h2>raspberry pi ideas</h2>
-
-        <p>
+        <p class="intro">
             i want to build a raspberry pi home server to learn linux administration,
-            self-host a few services, and have a low power machine running 24/7.
+            self-host a few services, and have a low-power machine running 24/7.
         </p>
 
-        <h3>goals</h3>
+        <section>
+            <h2>goals</h2>
 
-        <ul>
-            <li>learn linux administration</li>
-            <li>self-host a few services</li>
-            <li>create a low-power home server</li>
-            <li>experiment with docker</li>
-            <li>host a personal website</li>
-        </ul>
+            <ul>
+                <li>learn linux administration</li>
+                <li>self-host a few services</li>
+                <li>create a low-power home server</li>
+                <li>experiment with docker</li>
+                <li>host a personal website</li>
+            </ul>
+        </section>
 
-        <p class="back-link">
-            <a href="index.html">Back to ideas</a>
-        </p>
-    </div>
+        <section>
+            <h2>notes</h2>
 
+            <p>
+                possible services: pi-hole, jellyfin, nginx, wireguard,
+                syncthing, or a small personal dashboard.
+            </p>
+        </section>
+    </main>
 </body>
-
 </html>
