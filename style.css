@@ -64,28 +64,32 @@ h2 {
 /* Raspberry Pi page */
 
 .pi-page {
-    background: linear-gradient(135deg, #071b16, #123524);
-    color: white;
+    background: #282828;
+    color: #ebdbb2;
 }
 
 .pi-page .content {
-    max-width: 700px;
+    max-width: 620px;
     margin: 50px auto;
-    padding: 35px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 2px solid #32cd32;
-    border-radius: 18px;
-    box-shadow: 0 0 25px rgba(50, 205, 50, 0.25);
+    padding: 28px;
+    border: 2px solid #a89984;
+    background: #1d2021;
 }
 
 .pi-page h2 {
-    color: #7CFC00;
+    color: #fabd2f;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .pi-page h3 {
-    color: #98FB98;
+    color: #b8bb26;
     margin-top: 25px;
+    text-align: center;
+}
+
+.pi-page p {
+    line-height: 1.6;
 }
 
 .pi-page ul {
@@ -93,23 +97,19 @@ h2 {
 }
 
 .pi-page .status {
-    display: inline-block;
-    background: #32cd32;
-    color: #0b1b10;
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-weight: bold;
+    display: block;
+    color: #83a598;
+    margin-bottom: 18px;
+    font-size: 0.9em;
 }
 
 .pi-page a {
-    color: #9cff9c;
-    text-decoration: none;
+    color: #8ec07c;
 }
 
 .pi-page a:hover {
-    text-decoration: underline;
+    color: #b8bb26;
 }
-
 
 
 
